@@ -60,6 +60,13 @@ public class BookController {
         return bookFeignService.hello(name);
 
     }
+    @RequestMapping("/hello666")
+    @ResponseBody
+    public String hello666(String name){
+
+        return name;
+
+    }
     @RequestMapping("/toBookPage")
     public String toBookPage(){
         return "book";
